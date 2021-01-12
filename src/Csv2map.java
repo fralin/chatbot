@@ -3,8 +3,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Csv2map {
-    public static HashMap<String, float []> dictionnaire = new HashMap<String, float[]>();
     public static int VECTEUR_SIZE = 200;
+    public static HashMap<String, float []> dictionnaire = new HashMap<String, float[]>();
+
     public static void initDict () throws Exception {
         BufferedReader br = new BufferedReader(new FileReader("dictionnaire.csv"));
         String ligne = null;

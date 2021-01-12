@@ -27,6 +27,7 @@ public class Serveur extends ServerSocket {
             new Thread(new ServiceClient(connection, "T_" + c_port)).start();
         }
     }
+
     public static void main(String[] args) throws Exception {
         System.out.println("Initialisation du dictionnaire");
         Csv2map.initDict();

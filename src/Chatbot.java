@@ -80,7 +80,6 @@ public class Chatbot {
                 System.out.println(mot);
                 v = sommeVecteurs(v,dictionnaire.get(mot));
             }
-
         return v;
     }
 }
