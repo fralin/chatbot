@@ -1,3 +1,5 @@
+package app.util;
+
 import java.util.HashMap;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -21,9 +23,7 @@ public class Csv2map {
             float[] vecteur = new float[VECTEUR_SIZE];
             for (int i=0; i<VECTEUR_SIZE; i++) {
                 vecteur[i] = Float.parseFloat(data[i+1]);
-
             }
-
             dictionnaire.put(data[0], vecteur);
         }
         br.close();

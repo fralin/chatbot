@@ -13,7 +13,7 @@ lancer la commande ```telnet``` dans plusieurs terminaux.
 Le répertoire source contient 4 classes : 
 - ```Serveur.java``` : Cette classe est la classe principale. C'est à partir de cette
 classe que sont générés les threads à chaque nouvelle connexion d'un client;
-- ```ServiceClient.java```: cette classe contient le code executer par chaque thread;
+- ```app.util.ServiceClient.java```: cette classe contient le code executer par chaque thread;
 - ```Csv2map.java``` : cette classe assure la conversion du fichier dictionnaire
 au format csv en une structure de type map beaucoup plus efficace qu'un
 tableau pour acceder à des données sous forme ```<clé, valeur>```

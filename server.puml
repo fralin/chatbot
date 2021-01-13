@@ -1,0 +1,19 @@
+@startuml
+
+class Serveur {
+}
+
+class app.util.ServiceClient {
+}
+
+class ChatBot {
+}
+
+class Csv2map {
+}
+
+class Question {
+}
+
+
+@enduml

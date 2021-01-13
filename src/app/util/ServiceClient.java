@@ -1,6 +1,9 @@
+package app.util;
+
 import java.net.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+
 
 public class ServiceClient  implements Runnable{
     //String to finish the communication  ici c est ctrl-d
