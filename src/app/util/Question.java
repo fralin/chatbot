@@ -9,40 +9,43 @@ import java.util.Arrays;
 
 public class Question {
 
-    public static int count = 0;    // nombre total de questions crées
-
-    public int index;           // numéro de l'instance de la question
+    public String question;
     public String reponse;      // chaine de caractère réponse
-    public float[] vecteur;     // question vectorisée
+    public double[] vecteur;     // question vectorisée
 
     /**
      *
      * @param reponse : Chaine de caractére à retourner par le chatbot
-     * @param vecteur : Question type vectorisée
+     * @param question : Chaine de caractère de la question type
      */
 
-    public Question(String reponse, float[] vecteur) {
-        this.index = count++;
+    public Question(String question, String reponse) {
+        this.question = question;
         this.reponse = reponse;
-        this.vecteur = vecteur;
+        this.vecteur = null;
     }
 
-    public int getIndex() {
-        return index;
-    }
+    // Les getters
+    public String getQuestion() { return question; }
 
     public String getReponse() {
         return reponse;
     }
 
-    public float[] getVecteur() {
+    public double[] getVecteur() {
         return vecteur;
+    }
+
+    // Les setters
+
+    public void setVecteur(double[] vecteur) {
+        this.vecteur = vecteur;
     }
 
     @Override
     public String toString() {
         return "Question{" +
-                "index=" + index +
+                "question='" + question + '\'' +
                 ", reponse='" + reponse + '\'' +
                 ", vecteur=" + Arrays.toString(vecteur) +
                 '}';

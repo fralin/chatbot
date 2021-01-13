@@ -16,7 +16,11 @@ public class ServiceClient  implements Runnable{
     private BufferedReader flux_entrant=null;
     private PrintWriter flux_sortant =null;
 
-
+    /**
+     *
+     * @param connection
+     * @param id
+     */
     public ServiceClient(Socket connection, String id)
     {
         this.connection= connection;
@@ -24,6 +28,9 @@ public class ServiceClient  implements Runnable{
         System.out.format("Thread T__%s créé pour traiter la connection\n",id);
     }
 
+    /**
+     *
+     */
     private  void terminer(){
         try{
             if (connection != null)
@@ -39,6 +46,9 @@ public class ServiceClient  implements Runnable{
         }
     }
 
+    /**
+     *
+     */
     public  void run(){
 
         try{

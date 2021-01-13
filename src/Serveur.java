@@ -3,6 +3,7 @@ import java.io.*;
 
 import app.util.Csv2map;
 import app.util.ServiceClient;
+import app.util.Questions;
 
 public class Serveur extends ServerSocket {
 
@@ -35,6 +36,9 @@ public class Serveur extends ServerSocket {
         System.out.println("Initialisation du dictionnaire");
         Csv2map.initDict();
         System.out.println("ChatBot Ready ...");
+        System.out.println("Initialisation base questions standards");
+        Questions.initQuestion("data_chatbot.csv");
+        System.out.println("Initialisation terminée ...");
         Serveur connectionManager = new Serveur();
         connectionManager.execute();
     }

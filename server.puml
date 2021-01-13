@@ -3,13 +3,15 @@
 class Serveur {
 }
 
-class app.util.ServiceClient {
+class ServiceClient {
 }
 
 class ChatBot {
 }
 
 class Csv2map {
+
+
 }
 
 class Question {
