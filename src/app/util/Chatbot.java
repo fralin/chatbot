@@ -118,6 +118,6 @@ public class Chatbot {
             }
         }
         System.out.println("norme max : "+normeMax);
-        return reponse.getReponse();
+        return (normeMax < 0.5)? "Désolé, je ne vous ai pas compris" :reponse.getReponse();
     }
 }
