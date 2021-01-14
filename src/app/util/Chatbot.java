@@ -99,7 +99,6 @@ public class Chatbot {
         String[] mots = phrase.toLowerCase().split(" ");
         for (String mot : mots)
             if (dictionnaire.containsKey(mot)) {
-                System.out.println(mot);
                 v = sommeVecteurs(v,dictionnaire.get(mot));
             }
         normalise(v);
@@ -117,6 +116,10 @@ public class Chatbot {
                 normeMax = norme;
             }
         }
+        if (Double.isNaN(normeMax)) {
+            normeMax =0;
+        }
+
         System.out.println("norme max : "+normeMax);
         return (normeMax < 0.5)? "Désolé, je ne vous ai pas compris" :reponse.getReponse();
     }

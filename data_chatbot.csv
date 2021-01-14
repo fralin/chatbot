@@ -1,8 +1,8 @@
-Je voudrais réserver un créneau;demande de créneau
-J'aimerai réserver un créneau;demande de créneau
-je souhaiterai réserver un créneau ;demande de créneau
-est il possible de réserver un créneau ;demande de créneau
-puis je réserver un créneau;demande de créneau
+Je voudrais réserver une salle;demande de créneau
+J'aimerai réserver un salle;demande de créneau
+je souhaiterai réserver un salle ;demande de créneau
+est il possible de réserver un salle ;demande de créneau
+puis je réserver un salle;demande de créneau
 je voudrais prendre un rendez vous;demande de créneau
 j'aimerai prendre un rendez vous;demande de créneau
 je souhaiterai prendre un rendez vous;demande de créneau
@@ -25,7 +25,7 @@ donnez moi un rendez vous;demande de créneau
 trouvez moi un créneau;demande de créneau
 j'aimerai un créneau;demande de créneau
 je veux un créneau;demande de créneau
-montrez moi les créneau;demande d'informations
+montrez moi les salles disponibles;demande d'informations
 montrez moi les créneaux libres;demande d'informations
 je veux voir les créneaux ;demande d'informations
 je veux voir les créneaux libres;demande d'informations
